@@ -1,0 +1,103 @@
+html, body{
+  height: 100%;
+} 
+.container-fluid{
+  position: relative;
+  height: 100%;
+  background: url(./img/3201.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;  
+}
+.wrap{
+  position: relative;
+  background: url(./img/715001.jpg) no-repeat;
+  background-size: contain;
+  background-position: 160% 0;
+  width: 1355.4px;
+  height: 640.66px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-wrap{
+  position: absolute;
+  z-index: 100;
+  width: 45%;
+}
+.text-wrap > p{
+  position: absolute;
+  font-size: 0.7rem;
+  margin-top: 60%;
+  margin-left: 17%; 
+  font-size: 1.2rem;
+  color: grey;
+}
+.text-wrap > h1{
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 15%;
+  font-size: 10rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/* .text-wrap > h2{
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 15%;
+} */
+/* .text{
+  position: absolute; 
+} */
+svg{
+  position: absolute; 
+}
+.rect{
+  fill: rgb(250, 240, 226) ;
+}
+
+.arrow-btn{
+  position: absolute;
+  z-index: 101;
+  right: 0;
+  bottom: 3%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.1rem solid lightgray;
+}
+.arrow-btn:hover{
+  background-color: lightgray;
+}
+.arrow-btn:focus{
+  outline: none;
+} 
+.arrow-btn:active{
+  background-color: grey;
+}
+.arrow-btn > i{
+  font-size: 2rem;
+}
+#right-arrow{
+    margin-right: 5%;
+}
+#left-arrow{
+  margin-right: 10%;
+}
+.social-links{
+  display: flex; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.social-links a > i{
+  font-size: 3rem;
+  color: gray;
+}
+.social-links a{
+  margin: 5%
+}
+#pug{
+  width:3rem;
+}
+
+	
