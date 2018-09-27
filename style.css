@@ -71,7 +71,7 @@ svg{
   outline: none;
 } 
 .arrow-btn:active{
-  background-color: grey;
+  background-color: rgb(172, 172, 172);
 }
 .arrow-btn > i{
   font-size: 2rem;
