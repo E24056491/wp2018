@@ -7,30 +7,35 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <title>Pug</title>
 </head>
 <body>
   <div class="container-fluid">
-      <div class="wrap">
-        <div class="text-wrap">
+    <div class="opacity-fix"></div>      
+    <div class="wrap" id="wrap">
+        <div class="text-wrap top">
           <!-- <h2 class="text">Fabulous</h2> -->
-          <h1><b>PUG</b></h1>
-          <p>
+          <h1 class="text-fadein focus pug"><b>PUG</b></h1>
+          <p class="text-fadein focus pug">
             These sturdy, compact dogs are a part of the American Kennel Club's Toy group, 
             and are known as the clowns of the canine world because they have a great 
             sense of humor and like to show off. 
             
           </p>
+          <h1 class="text-fadein chowchow">CHOW CHOW</h1>
+          <p class="text-fadein chowchow" >This distinctive-looking dog breed has a proud, 
+            independent spirit that some describe as catlike. 
+            He can be aloof, but downright suspicious of strangers. 
+          </p>
         </div>
-        <svg viewBox="0 0 1795.5 848.688" >
-          <g id="XMLID_1_">
+        <svg viewBox="0 0 1795.5 848.688" class="top">
             <path class="rect" d="M1021.2,848H0V0h1000.7C900.4,108.7,839.2,253.9,839.2,413.4C839.2,583.5,908.8,737.4,1021.2,848z"/>
             <!-- <path class="curve-cut"  d="M1000.7,0H1795v848h-773.8C908.8,737.4,839.2,583.5,839.2,413.4C839.2,253.9,900.4,108.7,1000.7,0z"/> -->
-          </g>
         </svg>
-        <button class="arrow-btn" id="left-arrow"><i class="fas fa-angle-left"></i></button>
-        <button class="arrow-btn" id="right-arrow"><i class="fas fa-angle-right"></i></button>
-        <div class="social-links">
+        <button class="arrow-btns top" id="left-arrow"><i class="fas fa-angle-left"></i></button>
+        <button class="arrow-btns top" id="right-arrow"><i class="fas fa-angle-right"></i></button>
+        <div class="social-links top">
           <a href="https://www.facebook.com/itsdougthepug/" target="_blank"><i class="fab fa-facebook"></i></a>
           <a href="https://www.instagram.com/huxxi/" target="_blank" id="instagrem"><i class="fab fa-instagram"></i></a>
           <a href="https://www.sanger.dk/" target="_blank"><img src="./img/pug.png" alt="" id="pug"></a>
@@ -39,5 +44,6 @@
   </div>  
   <script src="./anime.min.js"></script>
   <script src="./script.js"></script>
+  
 </body>
 </html>

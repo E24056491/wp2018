@@ -4,15 +4,32 @@ html, body{
 .container-fluid{
   position: relative;
   height: 100%;
+  background-color: rgb(255, 51, 0);
   background: url(./img/3201.jpg) no-repeat;
   background-position: center;
   background-size: cover;  
 }
+/* .top{
+  z-index: 100;
+}
+.opacity-fix{
+  position: absolute;
+  width: 1355.4px;
+  height: 640.66px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2 ;
+  background-color: aliceblue;
+  opacity: 0.5; 
+  filter: alpha(opacity=20);
+} */
 .wrap{
-  position: relative;
+  position: absolute;
+  background-color: lightgrey;
   background: url(./img/715001.jpg) no-repeat;
   background-size: contain;
-  background-position: 160% 0;
+  background-position: 100% 0;
   width: 1355.4px;
   height: 640.66px;
   left: 50%;
@@ -21,8 +38,12 @@ html, body{
 }
 .text-wrap{
   position: absolute;
-  z-index: 100;
   width: 45%;
+  z-index: 100;
+}
+.text-fadein{
+  top: 150px;
+  opacity: 0;
 }
 .text-wrap > p{
   position: absolute;
@@ -39,14 +60,10 @@ html, body{
   font-size: 10rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-/* .text-wrap > h2{
-  position: absolute;
-  margin-left: 15%;
-  margin-top: 15%;
-} */
-/* .text{
-  position: absolute; 
-} */
+.text-wrap h1:last-of-type{
+  font-size: 7rem;
+}
+
 svg{
   position: absolute; 
 }
@@ -54,9 +71,8 @@ svg{
   fill: rgb(250, 240, 226) ;
 }
 
-.arrow-btn{
+.arrow-btns{
   position: absolute;
-  z-index: 101;
   right: 0;
   bottom: 3%;
   width: 3rem;
@@ -64,16 +80,16 @@ svg{
   border-radius: 50%;
   border: 0.1rem solid lightgray;
 }
-.arrow-btn:hover{
+.arrow-btns:hover{
   background-color: lightgray;
 }
-.arrow-btn:focus{
+.arrow-btns:focus{
   outline: none;
 } 
-.arrow-btn:active{
+.arrow-btns:active{
   background-color: rgb(172, 172, 172);
 }
-.arrow-btn > i{
+.arrow-btns > i{
   font-size: 2rem;
 }
 #right-arrow{
@@ -87,7 +103,7 @@ svg{
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 999;
+
 }
 .social-links a > i{
   font-size: 3rem;
