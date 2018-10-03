@@ -1,28 +1,29 @@
 var rect = document.getElementsByClassName('rect')[0];
 var pug = document.getElementsByClassName('pug');
 var wrap = document.querySelector('#wrap');
+window.onload = timeline;
+function timeline(){  
+  anime.timeline()
+    .add({
+      targets: pug,
+      opacity: 1,
+      translateY: '-150px',
+      easing:'easeOutExpo',
+      duration: 1000,
+      offet: 2000,
+      delay: function(el, i, l){
+        return i*100;
+      }, 
+    })
 
-var timeline = anime.timeline();
-timeline
-  .add({
-    targets: pug,
-    opacity: 1,
-    translateY: '-150px',
-    easing:'easeOutExpo',
-    duration: 1000,
-    offet: 2000,
-    delay: function(el, i, l){
-      return i*100;
-    }, 
-  })
-
-  .add({
-    targets: wrap,
-    backgroundPosition:'160% 0%',
-    duration: 1200,
-    offset: '+=50',
-    easing: 'easeInOutSine', 
-  });
+    .add({
+      targets: wrap,
+      backgroundPosition:'160% 0%',
+      duration: 1200,
+      offset: '+=50',
+      easing: 'easeInOutSine', 
+    });
+  }
 
   // .add({
   //   targets: 'svg path',
