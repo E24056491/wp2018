@@ -19,9 +19,9 @@ function timeline(){
     .add({
       targets: wrap,
       backgroundPosition:'160% 0%',
-      duration: 1200,
+      duration: 3000,
       offset: '+=50',
-      easing: 'easeInOutSine', 
+      easing: 'easeOutExpo', 
     });
   }
 
